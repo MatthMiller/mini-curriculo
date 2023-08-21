@@ -1,0 +1,60 @@
+.header {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .nome {
+      font-size: 1.625rem;
+      line-height: 2rem;
+      font-weight: 500;
+      color: #f5f5f5;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 20%;
+        margin-bottom: 5px;
+        height: 2px;
+        background-color: #62e334;
+      }
+    }
+
+    .subtitulo {
+      font-size: 1rem;
+      line-height: 1;
+      color: #c1c1c1;
+    }
+  }
+
+  .imagem-container {
+    width: 120px;
+
+    img {
+      height: 120px;
+      border-radius: 50%;
+      width: 100%;
+
+      border: 2px solid rgba(98, 227, 52, 0.2);
+    }
+
+    @media (max-width: 500px) {
+      width: 150px;
+
+      img {
+        height: 150px;
+      }
+    }
+  }
+}
